@@ -1,0 +1,12 @@
+extends layouts/master
+
+block append body
+    #app 
+        if !logged 
+            #not-logged 
+                #top
+                h1 Welcome To Chump
+                p Wanna join the rest of the community ? 
+                a(href="/signup")
+                    button Sign up 
+        

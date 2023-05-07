@@ -1,0 +1,184 @@
+/*Set up*/
+@import url(https://fonts.bunny.net/css?family=abeezee:400);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+    color :#ffff;
+}
+body,html{
+    overflow-x: hidden;
+    background-color: #1A1C1E;
+}
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem;
+}
+#nav *{
+    font-size: 25px;
+}
+#nav #nav-logo
+{
+    font-size: 35px;
+}
+#nav #nav-lists
+{
+    display: flex;
+    gap: 20px;
+}
+#nav #nav-lists #list
+{
+    list-style-type: none;
+}
+#nav #nav-lists #list a{
+    font-size: 25px;
+    transition: all 250ms;
+    text-decoration: none;
+    text-decoration-color: #ACBBBC;
+
+}
+#nav #nav-lists #list a:hover{
+    text-decoration: underline;
+}
+/*---------------*/
+#not-logged{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    width: 700px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #101112;
+}
+@media only screen and (max-width: 600px) {
+    #not-logged {
+      width: 350px;
+    }
+  }
+#not-logged * {
+    margin: 5px;
+}
+#not-logged button{
+    padding: 10px;
+    background-color: #484D56;
+    cursor: pointer;
+    border: none;
+    transition: all 250ms;
+    border-radius: 5px;
+}
+#not-logged button:hover{
+    background-color: #404B5E;
+}
+#signup-section{
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+#signup-form{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #101112;
+    width: 600px;;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 500px) {
+    #signup-form {
+      width: 320px;
+    }
+  }
+
+#signup-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signup-form form *{
+    margin: 2px;
+}
+#signup-form form button{
+    padding: 5px;
+    background-color: #484D56;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 250ms;
+}
+#signup-form form input{
+    color: black;
+}
+#signup-form form button:hover{
+    background-color: #404B5E;
+}
+/*-------*/
+#signin-section{
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+#signin-form{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #101112;
+    width: 600px;;
+    border-radius: 5px;
+}
+#signin-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signin-form form *{
+    margin: 2px;
+}
+#signin-form form button{
+    padding: 5px;
+    background-color: #484D56;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 250ms;
+}
+#signin-form form input{
+    color: black;
+}
+#signin-form form button:hover{
+    background-color: #404B5E;
+}
+/*---------*/
+.username-error-p,.email-error-p,.password-error-p,.invalid-error-p{
+    color: red;
+}
+#login-p
+{
+    color: #558086;
+}
+#login-a{
+    color: #BDC1BB;
+    transition: all 250ms;
+    text-decoration: none;
+}
+#login-a:hover{
+    color: #558086;
+    text-decoration: underline;
+}
+#error-404
+{
+    margin: 50px 0;
+}
+#error-404 h1
+{
+    text-align: center;
+}
+#error-404 h1 span{
+    color: red;
+}

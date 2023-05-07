@@ -1,0 +1,31 @@
+extends layouts/master
+
+block append body  
+    #app 
+        #signup-section.signup-section 
+            #signup-form.signup-form 
+                form(action="/signup", method="post")#sign-up 
+                    label(for="username") Username
+                    br
+                    input(type="text", name="username", id="username") 
+                    #username-error
+                    br
+                    label(for="password") Password 
+                    br
+                    input(type="password", name="password", id="password")
+                    #password-error
+                    br
+                    label(for="email") Email
+                    br
+                    input(type="email", name="email", id="email")
+                    #email-error
+                    br
+                    #invalid-error 
+                    br
+                    button Sign Up
+                    img(src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif", style='width:50px;display:none;' alt="")#loading-screen
+                    p#login-p Got An Account ? Login
+                        a(href="/signin")#login-a Here
+
+block append scripts 
+    script(src="/javascript/signup.js") 

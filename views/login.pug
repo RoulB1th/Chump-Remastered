@@ -1,0 +1,25 @@
+extends layouts/master
+
+block append body
+    #app 
+        #signin-section.signin-section 
+            #signin-form.signin-form 
+                form(action="/signin", method="post")#sign-in
+                    label(for="username") Username
+                    br
+                    input(type="text", name="username", id="username") 
+                    #username-error
+                    br
+                    label(for="password") Password 
+                    br
+                    input(type="password", name="password", id="password")
+                    #password-error
+                    br
+                    #invalid-error 
+                    button Sign In
+                    img(src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif", style='width:50px;display:none;' alt="")#loading-screen
+                    p#login-p Want To Register ? Register
+                        a(href="/signup")#login-a Here
+
+block append scripts 
+    script(src="/javascript/signin.js") 
